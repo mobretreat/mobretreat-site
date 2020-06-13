@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
-const DIR = "_data/events_gdcr2019";
+const DIR = "_data/events_gdmr2020";
 
 const toWelcomeTweetModerators = moderators => {
   if(!moderators) return "";
@@ -26,7 +26,7 @@ const toWelcomeTweet = event => {
 };
 
 const events = glob
-  .sync(path.resolve(__dirname, "../_data/events_gdcr2019/") + "/*.json")
+  .sync(path.resolve(__dirname, "../_data/events_gdmr2020/") + "/*.json")
   .sort((fa, fb) => fs.statSync(fa).mtimeMs - fs.statSync(fb).mtimeMs)
   .map(file => JSON.parse(fs.readFileSync(file)))
   .filter(event => event.date.start.startsWith("2019-11-15"))

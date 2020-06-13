@@ -44,7 +44,7 @@ title: "Timeline #gdcr19"
   const properDates = e => Object.assign({}, e, {date: Object.assign({}, e.date, { start: new Date(e.date.start), end: new Date(e.date.end )})});
   const sortByStart = (e1, e2) => e1.date.start-e2.date.start;
   const onTheWeekend = e => EARLIEST_START <= e.date.start && e.date.start <= LATEST_START;
-  const all_events = Object.values({{ site.data.events_gdcr2019 | jsonify }})
+  const all_events = Object.values({{ site.data.events_gdmr2020 | jsonify }})
       .map(properDates)
       .sort(sortByStart)
       .filter(onTheWeekend);

@@ -56,7 +56,7 @@ const sortByCity = (e1, e2) => {
 
 const run = () => {
   const events = glob
-    .sync(path.resolve(__dirname, "../_data/events_gdcr2019/") + "/*.json")
+    .sync(path.resolve(__dirname, "../_data/events_gdmr2020/") + "/*.json")
     .map(file => JSON.parse(fs.readFileSync(file)))
     .filter(ignoreVirtualEvents)
     .map(addUtcStart)

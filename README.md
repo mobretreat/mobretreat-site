@@ -5,9 +5,9 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.org), current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.org.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.org)
 
 
-2. Create a new file called `$YOURCITY.json` in the `_data/events_gdcr2019/` of the repository.
+2. Create a new file called `$YOURCITY.json` in the `_data/events_gdmr2020/` of the repository.
    You can either:
-   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema2019.json).
+   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema2020.json).
 
    * Generate a file when filling the form below. The file content will appear in **Result** area:
      <script async src="//jsfiddle.net/smx5t2y1/2/embed/result/"></script>

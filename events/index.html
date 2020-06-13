@@ -11,8 +11,8 @@ description: List of events around the world!
 <a href="/register-event/"><i class="fa fa-info-circle"></i> Register your event</a>
 <h2>GDCR events in 2019</h2>
 
-{% assign events_with_location = site.data.events_gdcr2019 | where_exp: 'event', 'event.location != "virtual"'  %}
-{% assign virtual_events = site.data.events_gdcr2019 | where_exp: 'event', 'event.location == "virtual"'  %}
+{% assign events_with_location = site.data.events_gdmr2020 | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events_gdmr2020 | where_exp: 'event', 'event.location == "virtual"'  %}
 {% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
 
 <form class="pure-form">
@@ -89,7 +89,7 @@ description: List of events around the world!
             window.history.pushState({ path: eventsURL }, '', eventsURL);
         };
 
-        $.get('/events/gdcr2019.json', function (eventsJson) {
+        $.get('/events/gdmr2020.json', function (eventsJson) {
             var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
             addEventsToMap(gdcrEvents);
         });
