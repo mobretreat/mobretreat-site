@@ -19,14 +19,9 @@ var renderEventsJson = function(eventsJson, template, container) {
 };
 
 var renderEvents = function(year) {
-  if (year < 2017) {
-    initEventsOnMap('gdcr'+year+'-stripped.json');
-    renderEventTemplate('/events/gdcr'+year+'.json', "past-event.tmpl", "#events");
-  } else {
-    $.get('/events/gdcr'+year+'.json', function(eventsJson) {
-      var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-      addEventsToMap(gdcrEvents);
-      renderEventsJson(eventsJson, "event.tmpl", "#events");
-    });
-  }
+  $.get('/events/gdmr'+year+'.json', function(eventsJson) {
+    var gdmrEvents = mapEventsDataToMapFormat(eventsJson);
+    addEventsToMap(gdmrEvents);
+    renderEventsJson(eventsJson, "event.tmpl", "#events");
+  });
 }

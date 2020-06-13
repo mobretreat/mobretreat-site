@@ -44,7 +44,7 @@ describe('Articles', () => {
     );
   });
 
-  describe('Articles written about Coderetreat format in general follow the schema: ', () => {
+  describe('Articles written about Mobretreat format in general follow the schema: ', () => {
     const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/about-the-format/') + '/*.yaml');
 
     ymlFiles.forEach(file =>

@@ -1,6 +1,6 @@
 ---
 layout: fullpage
-title: "Timeline #gdcr19"
+title: "Timeline #gdmr20"
 ---
 
 <style>
@@ -39,8 +39,8 @@ title: "Timeline #gdcr19"
 </table>
 
 <script>
-  const EARLIEST_START = new Date("2019-11-15T00:00:00.000+14:00");
-  const LATEST_START = new Date("2019-11-17T00:00:00.000-12:00");
+  const EARLIEST_START = new Date("2020-07-18T00:00:00.000+14:00");
+  const LATEST_START = new Date("2020-07-19T00:00:00.000-12:00");
   const properDates = e => Object.assign({}, e, {date: Object.assign({}, e.date, { start: new Date(e.date.start), end: new Date(e.date.end )})});
   const sortByStart = (e1, e2) => e1.date.start-e2.date.start;
   const onTheWeekend = e => EARLIEST_START <= e.date.start && e.date.start <= LATEST_START;

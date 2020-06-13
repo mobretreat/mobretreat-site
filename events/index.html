@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Global Day of Coderetreat Events
+title: Global Day of Mobretreat Events
 description: List of events around the world!
 ---
 
@@ -9,7 +9,7 @@ description: List of events around the world!
 </div>
 
 <a href="/register-event/"><i class="fa fa-info-circle"></i> Register your event</a>
-<h2>GDCR events in 2019</h2>
+<h2>GDMR events in 2020</h2>
 
 {% assign events_with_location = site.data.events_gdmr2020 | where_exp: 'event', 'event.location != "virtual"'  %}
 {% assign virtual_events = site.data.events_gdmr2020 | where_exp: 'event', 'event.location == "virtual"'  %}
@@ -17,7 +17,7 @@ description: List of events around the world!
 
 <form class="pure-form">
     <fieldset>
-        <select id="gdcrCountry" style="font-family: sans-serif;">
+        <select id="gdmrCountry" style="font-family: sans-serif;">
             <option selected disabled>Select your country...</option>
             <option value="none">Show All</option>
             <option disabled>-------------</option>
@@ -59,13 +59,13 @@ description: List of events around the world!
             var currentFilter = countryURLSearchParam ? decodeURIComponent(countryURLSearchParam[1]) : 0;
 
             if(currentFilter) {
-                $('#gdcrCountry').val(currentFilter);
+                $('#gdmrCountry').val(currentFilter);
                 filterRows(currentFilter);
             }
 
             window.onpopstate = function(e) {
                 var prevCountry = e.state.country ? decodeURIComponent(e.state.country) : 'none';
-                $('#gdcrCountry').val(prevCountry);
+                $('#gdmrCountry').val(prevCountry);
                 filterRows(prevCountry, prevCountry === 'none');
             };
         };
@@ -90,11 +90,11 @@ description: List of events around the world!
         };
 
         $.get('/events/gdmr2020.json', function (eventsJson) {
-            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-            addEventsToMap(gdcrEvents);
+            var gdmrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdmrEvents);
         });
 
-        $('#gdcrCountry').on('change', function (e) {
+        $('#gdmrCountry').on('change', function (e) {
             var filter = e.target.value;
             var showAll = filter === 'none';
 

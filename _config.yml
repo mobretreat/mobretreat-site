@@ -1,6 +1,6 @@
-title: Coderetreat
-url: https://www.coderetreat.org
-repository: coderetreat/coderetreat.org
+title: Mobretreat
+url: https://www.mobretreat.org
+repository: mobretreat/mobretreat-site
 permalink: /blog/:year/:month/:day/:title/
 plugins:
   - jekyll-feed

@@ -1,13 +1,13 @@
-# Registering your event at coderetreat.org
+# Registering your event at mobretreat.org
 
-This year, registering your event at coderetreat.org is easier than it has ever been! Like a lot of other community events, we're using a *Pull Request*-based process for registrations:
+This year, registering your event at mobretreat.org is easier than it has ever been! Like a lot of other community events, we're using a *Pull Request*-based process for registrations:
 
-1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.org), current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.org.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.org)
+1. Fork [the Mobretreat git repository](https://github.com/mobretreat/mobretreat-site), current status: [![Build Status](https://travis-ci.org/mobretreat/mobretreat-site.svg?branch=master)](https://travis-ci.org/mobretreat/mobretreat-site)
 
 
 2. Create a new file called `$YOURCITY.json` in the `_data/events_gdmr2020/` of the repository.
    You can either:
-   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema2020.json).
+   * Generate a file automatically by using [this schema](https://github.com/mobretreat/mobretreat-site/blob/master/events/event_schema2020.json).
 
    * Generate a file when filling the form below. The file content will appear in **Result** area:
      <script async src="//jsfiddle.net/smx5t2y1/2/embed/result/"></script>
@@ -49,15 +49,15 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 3. If you would like to run the verification of your JSON file locally, then you must have NodeJS installed on your machine to execute the following commands:
 
    ```sh
-   cd coderetreat.org/     # Change into the repository
+   cd mobretreat.org/     # Change into the repository
    npm install             # Install all dependencies
    npm test                # Verify all events
    ```
 
 4. Submit a pull request (PR) from GitHub. Be sure your PR title is clear.
 
-5. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.org/pull_requests) in the test output).
+5. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/mobretreat/mobretreat-site/pull_requests) in the test output).
 
-6. The Coderetreat coordinators will then merge your request as soon as possible.
+6. The Mobretreat coordinators will then merge your request as soon as possible.
 
 7. Your event will appear on [Where](/events/) page.

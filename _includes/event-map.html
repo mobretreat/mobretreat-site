@@ -1,20 +1,17 @@
 <section id="locations">
     <div id="counter">
-      {% include countdown.liquid date='2020-11-06T08:00:00.000Z' name ='gdcr' %}
+      {% include countdown.liquid date='2020-07-18T08:00:00.000Z' name ='gdmr' %}
     </div>
     <div id="map">
       <div id="popup"></div>
     </div>
-    <p class="subtitle">
-      Last year, there have been {{site.data.events_gdmr2020 | size}} events around the world!<br/>
-    </p>
 </section>
 
 <script>
     $(function() {
         $.get("/events/gdmr2020.json", function(eventsJson) {
-            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-            addEventsToMap(gdcrEvents);
+            var gdmrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdmrEvents);
         });
     });
 </script>
