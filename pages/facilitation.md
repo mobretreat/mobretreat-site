@@ -6,4 +6,4 @@ description: Help improve developers in your community by hosting a mobretreat i
 
 Help improve developers in your community by hosting a mobretreat in your city.
 
-TBD
+[Mobretreat presentation](/images/Mobretreat.pdf)
