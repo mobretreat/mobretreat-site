@@ -1,4 +1,4 @@
-<td>{{ include.event.date.start | date: "%A" }}</td>
+<td>{{ include.event.language }}</td>
 <td><a href="{{ include.event.url }}">{{ include.event.title }}</a></td>
 <td>
     {% assign loopCount = include.event.moderators | size | minus: 1 %}

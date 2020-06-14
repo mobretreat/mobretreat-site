@@ -5,7 +5,10 @@
     "start": "2020-07-18T09:00:00.000+01:00",
     "end": "2020-07-18T14:00:00.000+01:00"
   },
-  "location": "virtual",
+  "language": "English",
+  "location": {
+    "hosting": "online"
+  },
   "moderators": [
     {
       "name": "Xavi Gost",

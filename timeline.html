@@ -30,10 +30,10 @@ title: "Timeline #gdmr20"
   <thead>
     <tr>
       <th>Start (In your timezone)</th>
-      <th>Location</th>
-      <th>Contact</th>
-      <th>Timeline</th>
       <th>End (In your timezone)</th>
+      <th>Location</th>
+      <th>Event page</th>
+      <th>Timeline</th>
     </tr>
   </thead>
 </table>
@@ -121,17 +121,25 @@ title: "Timeline #gdmr20"
     for(let event of all_events) {
       const row = document.createElement("tr");
       row.append(createEl("td", event.date.start.toLocaleString()));
-      if(event.location === "virtual") {
-        row.append(createEl("td", "virtual"));
+      row.append(createEl("td", event.date.end.toLocaleString()));
+      if(event.location.country) {
+        row.append(createEl("td", event.location.city +", "+event.location.country+", "+event.location.hosting))
       } else {
-        row.append(createEl("td", event.location.city +", "+event.location.country))
+        row.append(createEl("td", "online"));
       }
-      row.append(createContactsTD(event));
+//      row.append(createContactsTD(event));
+
+      row.append(createEl("td", td => {
+        td.append(createEl("a", a => {
+          a.href = event.url;
+          a.append(event.title);
+        }));
+      }));
+      
       row.append(createEl("td", td => {
         td.classList.add("timeline-td");
         td.append(createSvg(event));
       }));
-      row.append(createEl("td", event.date.end.toLocaleString()));
       table.append(row);
     }
   }

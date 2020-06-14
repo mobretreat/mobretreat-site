@@ -1,6 +1,5 @@
 function hasCoordinates(event) {
   return (
-    event.location !== "virtual" &&
     typeof event.location.coordinates === "object" &&
     typeof event.location.coordinates.latitude === "number" &&
     typeof event.location.coordinates.longitude === "number"
@@ -55,8 +54,11 @@ var getPopupContent = function(features) {
     for (var i = 0; i < features.length; i++) {
       var eventUrl = features[i].get("urls");
       var eventName = features[i].get("name");
+      var eventHosting = features[i].get("hosting");
+      var eventLanguage = features[i].get("language");
       content +=
-        '<a href="' + eventUrl + '" target="_blank">' + eventName + "</a><hr/>";
+        '<a href="' + eventUrl + '" target="_blank">' + eventName 
+            + '</a><br/>('+eventHosting + ', ' + eventLanguage+')<hr/>';
     }
     content += "</p>";
   }
@@ -68,16 +70,16 @@ var mapEventsDataToMapFormat = function(data) {
     .filter(hasCoordinates)
     .map(function(item) {
       return {
-        timeZone: item.timezone,
-        offset: item.utcOffset,
         country: item.location.country,
+        city: item.location.city,
         urls: [item.url],
         name: item.title,
+        language: item.language,
+        hosting: item.location.hosting,
         coords: [
           item.location.coordinates.latitude,
           item.location.coordinates.longitude
-        ],
-        city: item.location.city
+        ]
       };
     });
 };
@@ -129,7 +131,9 @@ var addEventsToMap = function(locations) {
       new ol.Feature({
         geometry: toPoint(this),
         name: this.name,
-        urls: this.urls
+        urls: this.urls,
+        language: this.language,
+        hosting: this.hosting
       })
     );
   });

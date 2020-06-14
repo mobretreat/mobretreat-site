@@ -13,6 +13,12 @@
       "type": "string",
       "minLength": 1
     },
+    "language": {
+      "description":
+        "An official event spopken language",
+      "type": "string",
+      "minLength": 1
+    },
     "moderators": {
       "type": "array",
       "items": {
@@ -49,12 +55,8 @@
       "required": ["start", "end"],
       "additionalProperties": false
     },
-    "location": {
-      "oneOf": [
-        { "$ref": "#/definitions/real_location" },
-        { "$ref": "#/definitions/virtual_location" }
-      ]
-    },
+
+    "location": { "$ref": "#/definitions/location" },
     "sponsors": {
       "type": "array",
       "items": {
@@ -77,15 +79,15 @@
     }
   },
   "definitions": {
-    "virtual_location": {
-      "type": "string",
-      "enum": ["virtual"]
-    },
-    "real_location": {
+    "location": {
       "description":
         "Further data about the location your event takes place at",
       "type": "object",
       "properties": {
+        "hosting": {
+          "type": "string",
+          "enum": ["in-person", "online"]
+        },
         "city": {
           "type": "string",
           "minLength": 1
@@ -94,22 +96,23 @@
           "type": "string",
           "minLength": 1
         },
-        "coordinates": {
-          "type": "object",
-          "description":
-            "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
-          "properties": {
-            "latitude": { "type": "number" },
-            "longitude": { "type": "number" }
-          },
-          "additionalProperties": false,
-          "required": ["latitude", "longitude"]
-        }
+        "coordinates": { "$ref": "#/definitions/coordinates" }
       },
       "additionalProperties": false,
-      "required": ["country", "city"]
+      "required": ["hosting"]
+    },
+    "coordinates": {
+      "type": "object",
+      "description":
+        "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
+      "properties": {
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      },
+      "additionalProperties": false,
+      "required": ["latitude", "longitude"]
     }
-  },
+},
   "additionalProperties": false,
-  "required": ["title", "location", "url", "date"]
+  "required": ["title", "location", "url", "language", "date"]
 }

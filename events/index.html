@@ -8,20 +8,18 @@ description: List of events around the world!
     <div id="popup"></div>
 </div>
 
-<a href="/register-event/"><i class="fa fa-info-circle"></i> Register your event</a>
+<a href="https://forms.gle/xkJutmwAAiH6ACU5A" target="_blank" rel="noopener noreferrer" ><i class="fa fa-info-circle"></i> Register your event</a>
 <h2>GDMR events in 2020</h2>
 
-{% assign events_with_location = site.data.events_gdmr2020 | where_exp: 'event', 'event.location != "virtual"'  %}
-{% assign virtual_events = site.data.events_gdmr2020 | where_exp: 'event', 'event.location == "virtual"'  %}
-{% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
-
+{% assign events = site.data.events_gdmr2020 %}
+{% assign countries = events | where_exp: 'event', 'event.location.country' | map: 'location' | map: 'country' | uniq | sort %}
 <form class="pure-form">
     <fieldset>
         <select id="gdmrCountry" style="font-family: sans-serif;">
             <option selected disabled>Select your country...</option>
             <option value="none">Show All</option>
             <option disabled>-------------</option>
-            <option value="virtual">Virtual Events</option>
+            <option value="online">Online Events</option>
             {% for country in countries %}
             <option>{{ country }}</option>
             {% endfor %}
@@ -30,16 +28,14 @@ description: List of events around the world!
 </form>
 <table class="events-by-country">
     <tbody>
-    {% for event in virtual_events %}
-    <tr data-country="virtual">
-        <td>Virtual</td>
-        {% include event-table-row.html event=event %}
-    </tr>
-    {% endfor %}
-    {% assign events = events_with_location | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
-    {% for event in events %}
-    <tr data-country="{{event.location.country}}">
-        <td>{{ event.location.city }}, {{ event.location.country }}</td>
+    {% assign sorted_events = events | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
+    {% for event in sorted_events %}
+    <tr data-country= "{{event.location.country}}" data-hosting="{{event.location.hosting}}">
+        {% if event.location.country %}
+        <td>{{ event.location.city }}, {{ event.location.country }}, {{ event.location.hosting }}</td>
+        {% else %}
+        <td>{{ event.location.hosting }}</td>
+        {% endif %}
         {% include event-table-row.html event=event %}
     </tr>
     {% endfor %}
@@ -47,7 +43,7 @@ description: List of events around the world!
 </table>
 
 <p class="last-section">
-  <a href="{% link register-event.md %}">Register your event</a>
+  <a href="https://forms.gle/xkJutmwAAiH6ACU5A" target="_blank" rel="noopener noreferrer" >Register your event</a>
 </p>
 
 <script>
@@ -75,7 +71,8 @@ description: List of events around the world!
             for (var i = 0; i < rows.length; i++) {
                 row = rows[i];
                 ctry = row.getAttribute("data-country");
-                row.classList.toggle('hidden', !(showAll || ctry === filter));
+                hosting = row.getAttribute("data-hosting");
+                row.classList.toggle('hidden', !(showAll || ctry === filter|| hosting === filter));
             }
         };
 
