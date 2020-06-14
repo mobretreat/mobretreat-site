@@ -1,6 +1,6 @@
 ---
 layout: fullpage
-title: "Timeline #gdmr20"
+title: "Timeline #gdmr20 in your timezone"
 ---
 
 <style>
@@ -12,11 +12,10 @@ title: "Timeline #gdmr20"
     background: rgba(0, 0, 0, 0.1);
   }
   .timeline-td {
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
   #events tr td {
-    white-space: nowrap;
     padding: 2px;
   }
   .timeline-bar {
@@ -29,11 +28,12 @@ title: "Timeline #gdmr20"
 <table id="events">
   <thead>
     <tr>
-      <th>Start (In your timezone)</th>
-      <th>End (In your timezone)</th>
       <th>Location</th>
+      <th>Language</th>
       <th>Event page</th>
+      <th>Start</th>
       <th>Timeline</th>
+      <th>End</th>
     </tr>
   </thead>
 </table>
@@ -120,13 +120,12 @@ title: "Timeline #gdmr20"
       const initTable = (table) => {
     for(let event of all_events) {
       const row = document.createElement("tr");
-      row.append(createEl("td", event.date.start.toLocaleString()));
-      row.append(createEl("td", event.date.end.toLocaleString()));
       if(event.location.country) {
         row.append(createEl("td", event.location.city +", "+event.location.country+", "+event.location.hosting))
       } else {
-        row.append(createEl("td", "online"));
+        row.append(createEl("td", event.location.hosting));
       }
+      row.append(createEl("td", event.language));
 //      row.append(createContactsTD(event));
 
       row.append(createEl("td", td => {
@@ -136,11 +135,13 @@ title: "Timeline #gdmr20"
         }));
       }));
       
+      row.append(createEl("td", event.date.start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})));
       row.append(createEl("td", td => {
         td.classList.add("timeline-td");
         td.append(createSvg(event));
       }));
       table.append(row);
+      row.append(createEl("td", event.date.end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})));
     }
   }
 

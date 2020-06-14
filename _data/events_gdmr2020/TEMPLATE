@@ -1,5 +1,9 @@
 {
+    "title": "GDMR20 FUN Event",
+    "url": "http://www.example.com/",
+    "language": "English",
     "location": {
+    "hosting": "online",
         "city": "Berlin",
         "coordinates": {
             "latitude": 52.5193449,
@@ -22,7 +26,5 @@
             "name": "A Sponsor",
             "url": "https://twitter.com/asponsor"
         }
-    ],
-    "title": "GDMR20 FUN Event",
-    "url": "http://www.herebesign.up/"
+    ]
 }
