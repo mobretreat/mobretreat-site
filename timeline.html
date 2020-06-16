@@ -110,7 +110,7 @@ title: "Timeline #gdmr20 in your timezone"
     const width = (event.date.end.getTime()-event.date.start.getTime())*RATIO;
 
     template.innerHTML = `<svg xmlns="${svgns}" preserveAspectRatio="none" viewBox="0 0 100 10" class="timeline-bar">
-        <rect fill="#1b3f47" x="${x}" height="10" width="${width}"/>
+        <rect style="fill:#1b3f47" x="${x}" height="10" width="${width}" rx="3" ry="20"/>
         ${nowLine}
       </svg>`;
 
