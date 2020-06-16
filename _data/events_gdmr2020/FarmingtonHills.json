@@ -1,0 +1,24 @@
+{
+  "title": "GLOBAL Day of MobRereat - for the Americas and Friends",
+  "url": "https://www.eventbrite.com/e/global-day-of-mobrereat-for-the-americas-and-friends-tickets-108575391920",
+  "language": "English",
+  "date": {
+    "start": "2020-07-18T11:00:00.000-04:00",
+    "end": "2020-07-18T18:00:00.000-04:00"
+  },
+  "location": {
+    "hosting": "online",
+    "country": "United States",
+    "city": "Farmington Hills",
+    "coordinates": {
+      "latitude": 42.485654,
+      "longitude": -83.380968
+    }
+  },
+  "moderators": [
+      {
+        "name": "Bob Allen",
+        "url": "https://twitter.com/CuriousAgilist"
+      }
+    ]
+}
