@@ -8,6 +8,7 @@ $navbar-padding: $gutter/2;
 .navbar {
   padding: $navbar-padding 0;
   position: fixed;
+  font-size: 1.2em;
   left: 0;
   right: 0;
   top: 0;
@@ -67,30 +68,31 @@ $navbar-padding: $gutter/2;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .navbar-inner {
     button {
       display: block;
     }
   }
-  .menu-word {
-    margin-left: 50px;
-    color: $green;
-    font-size: 1.2em;
-    display: block;
-    margin-top: 10px;
-    margin-right: 20px;
+
+  .navbar {
+    font-size: 15px;
   }
+
+  .menu-word {
+    display: none;
+  }
+
   .hamburger {
     position: absolute;
     top: 0;
-    left: 165px;
+    left: calc(50% - 35px);
     overflow: hidden;
     margin: 0;
     padding: 0;
     width: 70px;
     height: 67px;
-    font-size: 0;
+    font-size: 15px;
     text-indent: -9999px;
     box-shadow: none;
     border: none;
@@ -155,17 +157,3 @@ $navbar-padding: $gutter/2;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .navbar {
-    font-size: 15px;
-  }
-
-  .menu-word {
-    display: none;
-  }
-
-  .hamburger {
-    left: 41%;
-    left: calc(50% - 35px);
-  }
-}
