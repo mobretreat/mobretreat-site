@@ -1,7 +1,7 @@
 #hero {
   $bg-height: 800vw / 14;
   overflow: hidden;
-  background-image: url("/images/mountain_path.svg");
+  background-image: url("/images/masthead.svg");
   background-size: cover;
   background-attachment: fixed;
   .header {
@@ -14,7 +14,7 @@
     font-family: $title-font;
     margin: 1em 10% 1em 40%;
     font-size: 1.6em;
-    color: $dark;
+    color: white;
     text-align: center;
     float: right;
   }
@@ -32,7 +32,7 @@
     background-size: cover;
   }
   @include media($mobile) {
-    background-image: url("/images/mountain_path_with_coderetreat.svg");
+    background-image: url("/images/masthead_with_mobretreat.svg");
     background-size: 100% $bg-height;
     background-repeat: no-repeat;
     background-attachment: scroll;
