@@ -43,26 +43,21 @@ var extractFeaturesFromClusterLayer = function(feature) {
 };
 
 var getPopupContent = function(features) {
-  var content = "";
-  if (features.length == 1) {
-    var eventUrl = features[0].get("urls");
-    var eventName = features[0].get("name");
+  var content = "<p>";
+  for (var i = 0; i < features.length; i++) {
+    var eventUrl = features[i].get("urls");
+    var eventName = features[i].get("name");
+    var eventHosting = features[i].get("hosting");
+    var eventLanguage = features[i].get("language");
     content +=
-      '<p><a href="' + eventUrl + '" target="_blank">' + eventName + "</a></p>";
-  } else {
-    content += "<p>";
-    for (var i = 0; i < features.length; i++) {
-      var eventUrl = features[i].get("urls");
-      var eventName = features[i].get("name");
-      var eventHosting = features[i].get("hosting");
-      var eventLanguage = features[i].get("language");
-      content +=
-        '<a href="' + eventUrl + '" target="_blank">' + eventName 
-            + '</a><br/>('+eventHosting + ', ' + eventLanguage+')<hr/>';
+      '<a href="' + eventUrl + '" target="_blank">' + eventName + '</a>' 
+          + '<br/>('+eventHosting + ', ' + eventLanguage+')';
+    if(i != features.length - 1) {
+      content += '<hr/>';
     }
-    content += "</p>";
   }
-  return content;
+  content += "</p>";
+return content;
 };
 
 var mapEventsDataToMapFormat = function(data) {

@@ -138,6 +138,7 @@ title: "Timeline #gdmr20 in your timezone"
       row.append(createEl("td", td => {
         td.append(createEl("a", a => {
           a.href = event.url;
+          a.target="_blank";
           a.append(event.title);
         }));
       }));
