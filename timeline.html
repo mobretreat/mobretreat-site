@@ -34,9 +34,8 @@ title: "Timeline #gdmr20 in your timezone"
       <th>Location</th>
       <th>Language</th>
       <th>Event page</th>
-      <th>Start</th>
+      <th>Time</th>
       <th>Timeline</th>
-      <th>End</th>
     </tr>
   </thead>
 </table>
@@ -140,10 +139,12 @@ title: "Timeline #gdmr20 in your timezone"
           a.append(event.title);
         }));
       }));
-      
-      row.append(createEl("td", event.date.start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}), "timeline-date"));
+
+      const startTime = event.date.start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+      const endTime = event.date.end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+      row.append(createEl("td", startTime + " -" + endTime, "timeline-date"));
+
       row.append(createEl("td", createSvg(event), "timeline-td"));
-      row.append(createEl("td", event.date.end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}), "timeline-date"));
       table.append(row);
     }
   }
