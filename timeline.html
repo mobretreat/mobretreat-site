@@ -15,6 +15,9 @@ title: "Timeline #gdmr20 in your timezone"
     width: 50%;
     height: 100%;
   }
+  .timeline-date {
+    white-space: nowrap;
+  }
   #events tr td {
     padding: 2px;
   }
@@ -50,12 +53,15 @@ title: "Timeline #gdmr20 in your timezone"
       .filter(onTheWeekend);
 
 
-  const createEl = (tag, content) => {
+  const createEl = (tag, content, contentClass) => {
     const el = document.createElement(tag);
     if(typeof content === "function") {
       content(el);
     } else {
       el.append(content);
+    }
+    if(typeof contentClass === "string"){
+      el.classList.add(contentClass);
     }
     return el;
   }
@@ -135,13 +141,10 @@ title: "Timeline #gdmr20 in your timezone"
         }));
       }));
       
-      row.append(createEl("td", event.date.start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})));
-      row.append(createEl("td", td => {
-        td.classList.add("timeline-td");
-        td.append(createSvg(event));
-      }));
+      row.append(createEl("td", event.date.start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}), "timeline-date"));
+      row.append(createEl("td", createSvg(event), "timeline-td"));
+      row.append(createEl("td", event.date.end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}), "timeline-date"));
       table.append(row);
-      row.append(createEl("td", event.date.end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})));
     }
   }
 
