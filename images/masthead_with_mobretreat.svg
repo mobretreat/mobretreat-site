@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg65"
-   version="1.1"
-   viewBox="0 0 224.52057 253.57185"
+   width="224.52057"
    height="253.57185"
-   width="224.52057">
+   viewBox="0 0 224.52057 253.57185"
+   version="1.1"
+   id="svg65">
   <metadata
      id="metadata69">
     <rdf:RDF>
@@ -28,91 +28,86 @@
   <defs
      id="defs13">
     <path
-       d="M 0,0 H 22.359353 V 14.906235 H 0 Z"
-       id="path-1" />
+       id="path-1"
+       d="M 0,0 H 22.359353 V 14.906235 H 0 Z" />
     <path
-       d="M 0,0 11.179677,7.4531177 0,14.906235"
-       id="path-3" />
+       id="path-3"
+       d="M 0,0 11.179677,7.4531177 0,14.906235" />
     <path
-       d="M 0,0 H 14.092252 V 9.3785019 H 0 Z"
-       id="path-5" />
+       id="path-5"
+       d="M 0,0 H 14.092252 V 9.3785019 H 0 Z" />
     <path
-       d="M 0,0 7.0461262,4.689251 0,9.3785019"
-       id="path-7" />
+       id="path-7"
+       d="M 0,0 7.0461262,4.689251 0,9.3785019" />
     <path
-       d="M 0,0 H 9 V 6 H 0 Z"
-       id="path-9" />
+       id="path-9"
+       d="M 0,0 H 9 V 6 H 0 Z" />
     <path
-       d="M 0,0 4,3 0,6"
-       id="path-11" />
+       id="path-11"
+       d="M 0,0 4,3 0,6" />
     <path
-       d="M 0,0 H 5 V 4 H 0 Z"
-       id="path-13" />
+       id="path-13"
+       d="M 0,0 H 5 V 4 H 0 Z" />
     <path
-       d="M 0,0 3,2 0,4"
-       id="path-15" />
+       id="path-15"
+       d="M 0,0 3,2 0,4" />
     <path
-       id="path-17"
-       d="m 36,18 h 36 v 18 z m 0,0 V 36 H 0 Z m 0,0 H 0 V 0 Z m 0,0 V 0 h 36 z" />
+       d="m 36,18 h 36 v 18 z m 0,0 V 36 H 0 Z m 0,0 H 0 V 0 Z m 0,0 V 0 h 36 z"
+       id="path-17" />
   </defs>
-  <rect
-     y="6.3596454"
-     x="6.3596454"
-     height="240.85257"
-     width="211.80128"
-     id="rect2096"
-     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.71929073;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <g
-     transform="matrix(2.1139732,0,0,2.1139732,0.39586639,-374.67413)"
-     id="g2793">
-    <g
-       id="g1420-0">
-      <circle
-         r="9.3204927"
-         cy="266.46667"
-         cx="15.53194"
-         id="path1432-6"
-         style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.31034166;stroke-opacity:1" />
-      <circle
-         r="9.3204927"
-         cy="275.11145"
-         cx="90.890175"
-         id="path1432-2-5"
-         style="fill:#205c24;fill-opacity:1;stroke:none;stroke-width:0.31034169;stroke-opacity:1" />
-      <circle
-         r="9.3204927"
-         cy="268.59146"
-         cx="65.858078"
-         id="path1432-3-0"
-         style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.31034169;stroke-opacity:1" />
-      <circle
-         r="9.3204927"
-         cy="276.04288"
-         cx="40.010986"
-         id="path1432-0-8"
-         style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.31034169;stroke-opacity:1" />
-      <ellipse
-         ry="15.601394"
-         rx="40.749905"
-         cy="235.29298"
-         cx="52.003109"
-         id="path5173-1"
-         style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
-      <path
-         transform="scale(1,-1)"
-         d="m 103.00735,-210.96545 a 66.655205,17.813532 0 0 1 -49.835702,6.21584 66.655205,17.813532 0 0 1 -50.3537915,-5.91011"
-         id="path5203-2"
-         style="fill:none;fill-opacity:1;stroke:#1f5d23;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
+     id="g857">
+    <rect
+       y="6.3596454"
+       x="6.3596454"
+       height="240.85257"
+       width="211.80128"
+       id="rect2096"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.71929073;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       r="19.703272"
+       cy="188.62927"
+       cx="33.229973"
+       id="path1432-6"
+       style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.65605396;stroke-opacity:1" />
+    <circle
+       r="19.703272"
+       cy="206.9041"
+       cx="192.53526"
+       id="path1432-2-5"
+       style="fill:#205c24;fill-opacity:1;stroke:none;stroke-width:0.65605402;stroke-opacity:1" />
+    <circle
+       r="19.703272"
+       cy="193.12102"
+       cx="139.61807"
+       id="path1432-3-0"
+       style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.65605402;stroke-opacity:1" />
+    <circle
+       r="19.703272"
+       cy="208.87311"
+       cx="84.97802"
+       id="path1432-0-8"
+       style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.65605402;stroke-opacity:1" />
+    <ellipse
+       ry="32.980927"
+       rx="86.144203"
+       cy="122.72894"
+       cx="110.32905"
+       id="path5173-1"
+       style="fill:#1f5d23;fill-opacity:1;stroke:none;stroke-width:0.55932206;stroke-opacity:1" />
+    <path
+       d="M 218.15064,71.301177 A 140.90732,37.657329 0 0 0 112.79931,58.161058 140.90732,37.657329 0 0 0 6.3527395,70.654872"
+       id="path5203-2"
+       style="fill:none;fill-opacity:1;stroke:#1f5d23;stroke-width:5.59322071;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.26041698px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="20.155966"
-       y="238.41173"
-       id="text847"><tspan
-         id="tspan845"
-         x="20.155966"
-         y="238.41173"
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.26041698px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332px">MobRetreat</tspan></text>
+       id="text847"
+       y="129.32187"
+       x="47.122341"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.57627296px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.55932206px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.57627296px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.55932206px"
+         y="129.32187"
+         x="47.122341"
+         id="tspan845">MobRetreat</tspan></text>
   </g>
 </svg>

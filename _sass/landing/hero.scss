@@ -17,8 +17,8 @@
     color: white;
     text-align: center;
     float: right;
-    min-height: 10em;
   }
+  min-height: 10em;
   @include media($tablet) {
     background-image: none;
     background-color: $logo-green;
@@ -29,11 +29,10 @@
       margin: $gutter auto;
       padding: $gutter;
       float: none;
-      min-height: 0;
     }
     padding: $gutter;
     height: auto;
-    min-height: $bg-height;
+    min-height: 0;
     background-size: cover;
   }
   @include media($mobile) {
@@ -51,8 +50,10 @@
       }
       margin-top: $bg-height;
       margin-bottom: 0;
+      min-height: 0;
     }
     margin-bottom: 0;
     padding-bottom: 0;
+    min-height: 0;
   }
 }
