@@ -17,11 +17,15 @@
     color: white;
     text-align: center;
     float: right;
+    min-height: 10em;
   }
   @include media($tablet) {
+    background-image: none;
+    background-color: $logo-green;
     .header {
       margin-top: $gutter;
       background-color: rgba($light, 0.7);
+      color: $dark;
       margin: $gutter auto;
       padding: $gutter;
       float: none;

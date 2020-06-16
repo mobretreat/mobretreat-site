@@ -12,7 +12,7 @@
   }
 
   tr {
-    background: darken(#F4F9F0, 5%);
+    background: darken($bg-green, 5%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     td:nth-child(1), td:nth-child(2), td:nth-child(3) {
@@ -29,7 +29,7 @@
 
     tr {
       margin: 20px 0;
-      background: darken(#F4F9F0, 5%);
+      background: darken($bg-green, 5%);
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
       td:nth-child(1), td:nth-child(2) {

@@ -3,7 +3,7 @@
 
 html, body {
   margin: 0;
-  background-color: $light;
+  background-color: $bg-green;
   color: $dark;
   line-height: $gutter;
   font-family: $body-font;
@@ -20,7 +20,7 @@ p {
 }
 
 a {
-  color: $green;
+  color: $link;
   text-decoration: none;
   &:hover { text-decoration: underline; }
 }
@@ -108,9 +108,9 @@ cite {
 }
 
 .button {
-  background-color: $green;
+  background-color: $logo-green;
   text-decoration: none;
-  color: $light;
+  color: $bg-green;
   font-size: 1.2em;
   font-weight: bold;
   padding: $gutter/1.2;
@@ -119,13 +119,13 @@ cite {
   @include fill-parent;
   transition: linear 0.5s;
   &:hover {
-    background-color: $lightgreen;
+    background-color: $brown;
   }
   border-radius: 4px;
 }
 
 .last-section {
-  background-color: $blue;
+  background-color: $logo-green;
   font-size: 1.2em;
   padding: $gutter/1.2;
   display: block;
@@ -135,12 +135,13 @@ cite {
 }
 
 .last-section a {
-  color: $dark;
+  color: white;
   font-weight: bold;
 }
 
 .page_header {
-  background-color: $blue;
+  background-color: $logo-green;
+  color: white;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin: 0;
