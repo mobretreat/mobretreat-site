@@ -1,3 +1,3 @@
-# Registering your event at mobretreat.org
+This repository contains the central [mobretreat](https://mobretreat.org) site.
 
-Fill out [our registration form](https://forms.gle/xkJutmwAAiH6ACU5A)
+To register your event fill out our [registration form](https://forms.gle/xkJutmwAAiH6ACU5A).
