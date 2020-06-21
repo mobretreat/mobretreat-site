@@ -5,7 +5,7 @@ description: How the rounds are different
 ---
 
 The retreat has 4 to 5 rounds. 
-Each round includes 45 minutes of coding and time for a mini-retro.
+Each round includes 45 minutes of coding and a mini-retro.
 
 #1: Navigator leads strong as a commander.
 
