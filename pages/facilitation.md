@@ -8,8 +8,7 @@ Help improve developers in your community by hosting a MobRetreat in your city.
 
 ## Facilitator slack channel
 
-Open Software Crafters slack [(click here for the invite)](https://slack.softwarecrafters.org/) and go to [#mobretreat](https://softwarecrafters.slack.com/messages/C012EAHF3HU) channel.
-
+Visit Software Crafters slack [(click here for the invite)](https://slack.softwarecrafters.org/) and go to [#mobretreat](https://softwarecrafters.slack.com/messages/C012EAHF3HU) channel.
 
 ## Facilitator Training
 
