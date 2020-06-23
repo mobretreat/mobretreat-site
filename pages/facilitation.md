@@ -6,7 +6,7 @@ description: Help improve developers in your community by hosting a MobRetreat i
 
 Help improve developers in your community by hosting a MobRetreat in your city.
 
-## Facilitator slack channel
+## Facilitator Slack Channel
 
 Visit Software Crafters slack [(click here for the invite)](https://slack.softwarecrafters.org/) and go to [#mobretreat](https://softwarecrafters.slack.com/messages/C012EAHF3HU) channel.
 
