@@ -6,6 +6,11 @@ description: Help improve developers in your community by hosting a MobRetreat i
 
 Help improve developers in your community by hosting a MobRetreat in your city.
 
+## Facilitator slack channel
+
+Open Software Crafters slack [(click here for the invite)](https://slack.softwarecrafters.org/) and go to [#mobretreat](https://softwarecrafters.slack.com/messages/C012EAHF3HU) channel.
+
+
 ## Facilitator Training
 
 - Time: Monday, Jul 6, 2020 19:00 CEST (Amsterdam, Berlin, Rome, Stockholm, Vienna)
