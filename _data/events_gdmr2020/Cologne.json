@@ -1,0 +1,28 @@
+{
+  "title": "Global Day of Mob-Retreat 2020 (Cologne)",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Koln/events/271653242/",
+  "language": "German",
+  "date": {
+    "start": "2020-07-18T09:30:00.000+02:00",
+    "end": "2020-07-18T17:30:00.000+02:00"
+  },
+  "location": {
+    "hosting": "online",
+    "country": "Germany",
+    "city": "Cologne",
+    "coordinates": {
+      "latitude": 50.9576819,
+      "longitude": 6.8972835
+    }
+  },
+ "moderators": [
+    {
+      "name": "Ansgar Himmel",
+      "url": "https://twitter.com/a_himmel"
+    },
+    {
+      "name": "Stefan Scheidt",
+      "url": "https://twitter.com/stefanscheid"
+    }
+  ]
+}
