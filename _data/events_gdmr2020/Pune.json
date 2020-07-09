@@ -1,0 +1,30 @@
+{
+    "title": "Global Day of MobRetreat 2020 (Pune)",
+    "url": "https://nelkinda.com/events/2020/07/18/Global-Day-of-Mobretreat/",
+    "language": "English",
+    "location": {
+    "hosting": "online",
+        "city": "Pune",
+        "coordinates": {
+            "latitude": 18.5534022,
+            "longitude": 73.7967793
+        },
+        "country": "India"
+    },
+    "date": {
+      "start": "2020-07-18T10:00:00.000+05:30",
+      "end": "2020-07-18T17:30:00.000+05:30"
+    },
+    "moderators": [
+        {
+            "name": "Christian Hujer",
+            "url": "https://twitter.com/christianhujer"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nelkinda Software Craft",
+            "url": "https://twitter.com/nelkinda"
+        }
+    ]
+}
