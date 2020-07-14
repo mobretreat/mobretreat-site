@@ -1,0 +1,23 @@
+{
+  "title": "Global Day of Mobretreat - Americas West",
+  "url": "https://www.meetup.com/AgilePDX-User-Group-Portland-Metro/events/271910491/",
+  "language": "English",
+  "date": {
+    "start": "2020-07-18T09:00:00.000-07:00",
+    "end": "2020-07-18T16:00:00.000-07:00"
+  },
+  "location": {
+    "hosting": "online",
+    "country": "United States",
+    "city": "Portland, OR",
+    "coordinates": {
+      "latitude": 45.5426,
+      "longitude": -122.7944
+    }
+  },
+  "moderators": [
+      {
+        "name": "Matt Plavcan"
+      }
+    ]
+}
