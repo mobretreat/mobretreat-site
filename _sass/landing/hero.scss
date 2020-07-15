@@ -11,6 +11,12 @@
     h2 {
       font-size: 1.5em;
     }
+    .hashtags {
+      color: $dark;
+      background-color: $bg-green;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
     font-family: $title-font;
     margin: 1em 10% 1em 40%;
     font-size: 1.6em;
@@ -24,12 +30,15 @@
     background-color: $logo-green;
     .header {
       margin-top: $gutter;
-      background-color: rgba($light, 0.7);
+      background-color: $lightgreen;
       color: $dark;
       margin: $gutter auto;
       padding: $gutter;
       float: none;
-    }
+      .hashtags {
+        background-color: $lightgreen;;
+      }
+      }
     padding: $gutter;
     height: auto;
     min-height: 0;
