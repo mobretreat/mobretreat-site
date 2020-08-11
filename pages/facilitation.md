@@ -13,8 +13,9 @@ Visit Software Crafters slack [(click here for the invite)](https://slack.softwa
 ## MobRetreat Resources
 
 - [MobRetreat Presentation](https://docs.google.com/presentation/d/18nyk8HeQxFfAPzvq7vV1TnZH3JxyhpRdgcs-3zsqz0w/edit?usp=sharing)
+- [MobRetreat Express Presentation](https://docs.google.com/presentation/d/16NKpJoDkpdFoEvbUgCFfifZqIvYAu5D9iHsiQfUJ5xc/edit?usp=sharing)
 - [The acoustic timer](https://www.online-stopwatch.com/full-screen-interval-timer/?c=80wgdfd2hg)
-- [The non acoustic time](https://mobti.me/)
+- [The non acoustic time](https://dev.mobti.me/) with editable roles
 - [Zoom Client Presentation](https://docs.google.com/presentation/d/17LrVyv_qNCfbjrpnQXP5nwTP0SQ0Dimtn_HCi6QJfe0/edit?usp=sharing)
 
 ## Video Interview with the Authors
